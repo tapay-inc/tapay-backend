@@ -19,5 +19,5 @@ func main() {
 	}
 
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":" + port, nil))
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
